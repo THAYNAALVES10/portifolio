@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   width: 100vw;
   height: 100vh;
   font-family: 'Inria Serif';
   font-size: 2rem;
 }
 
-h1{
+h1 {
   margin-bottom: 2rem;
 }
 
-main{
+main {
   width: 100%;
   min-height: 100%;
   display: flex;
@@ -26,17 +27,17 @@ main{
   align-items: center;
 }
 
-#avatar{
+#avatar {
   width: 15rem;
-  margin:3rem;
+  margin: 3rem;
 }
 
-#device{
+#device {
   width: 60rem;
-  margin:3rem;
+  margin: 3rem;
 }
 
-#about{
+#about {
   background-color: #6E07F3;
   margin: 3rem;
   padding: 2rem;
@@ -44,42 +45,99 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:2rem;
-  color: white;
-  border-radius: 5rem ;
-}
-
- #carrer{
-   color: black;
-   background-color: white;
-   border-radius: 1rem;
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-   font-weight: 900;
-   gap: 2rem;
- }
-
-#carrer > p {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
   gap: 2rem;
-  
+  color: white;
+  border-radius: 5rem;
 }
-#carrer >p > span {
+
+#carrer {
+  color: black;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 900;
+  gap: 2rem;
+}
+
+#carrer>p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+#carrer>p>span {
   text-align: center;
   padding: 1rem;
 }
 
-#carrer > p > span:nth-child(1){
+#carrer>p>span:nth-child(1) {
   font-size: 3rem;
 }
- ul{
+
+ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-   
+
+}
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+}
+
+#carrossel-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  justify-content: center;
+  height: 30rem;
+  width: 74rem;
+  border-radius: 1rem;
+}
+
+#thayna-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.carrossel-item>a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: black;
+}
+
+.carrossel-seta {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.carrossel-item>a>img {
+  width: 34rem;
+
+}
+
+.carrossel {
+  display: flex;
+  gap: 2rem;
+  width: 40rem;
+  overflow-x: scroll;
+}
+
+.carrossel::-webkit-scrollbar{
+  width: 0;
 }
