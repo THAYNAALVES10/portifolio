@@ -19,6 +19,7 @@ h1 {
 }
 
 main {
+  margin-top: 6rem;
   width: 100%;
   min-height: 100%;
   display: flex;
@@ -136,8 +137,103 @@ ul {
   gap: 2rem;
   width: 40rem;
   overflow-x: scroll;
+  align-items: center;
 }
 
 .carrossel::-webkit-scrollbar{
   width: 0;
+}
+
+#curriculo{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  justify-content: flex-start;
+}
+#curriculo>p{
+  font-weight: 999;
+  
+}
+
+#curriculo>img{
+  width: 3rem;
+}
+
+#curriculo>img:hover{
+  scale: 1.1;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+header>nav{
+  width: 80%;
+  border-radius: 6rem;
+  
+  background-color: #6E07F3;
+}
+header>nav>ul{
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header>nav>ul>li>a{
+  text-decoration: none;
+  color: #fff;
+}
+
+header>nav>ul>li>a:hover{
+  color: #FFC0CB;
+}
+
+#contato{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+#contato-title{
+  display: flex;
+  gap: 2rem;
+}
+
+#icons> div > a > img{
+  width: 2rem;
+}
+
+#icons > div > a {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 14rem;
+  text-decoration: none;
+  color: #ffff;
+}
+
+#icons{
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+  }
+
+#icons >div{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
 }

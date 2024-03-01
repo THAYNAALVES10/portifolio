@@ -23,10 +23,21 @@ const projetosList = [
     titulo: 'MovelCraft',
     caminho: 'assets/imagens/movel.png',
     link: 'https://github.com/THAYNAALVES10/MovelCraft'
-  },{
+  },
+  {
     titulo: 'TrocaCor',
     caminho: 'assets/imagens/TrocaCor.png',
     link: 'https://github.com/THAYNAALVES10/TrocaCor'
+  },
+  {
+    titulo: 'Portifólio',
+    caminho: 'assets/imagens/portiforio.png',
+    link: 'https://github.com/THAYNAALVES10/portifolio'
+  },
+  {
+    titulo: 'Noticias',
+    caminho: 'assets/imagens/Noticias.png',
+    link: 'https://www.figma.com/file/Ic2MsQ5nU0MPsc9xmWhngr/Untitled?type=design&mode=design&t=raHvp9ZqWROdv35k-0'
   }
 ]
 
@@ -43,3 +54,13 @@ const avancarScroll = (direcao) => {
 }
 
 projetosList.forEach(projeto => carrosselProjetos(projeto.caminho, projeto.titulo, projeto.link))
+
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('nav');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > 50) { // Define a posição na qual você deseja mudar a cor do cabeçalho
+    header.style.backgroundColor = '#000'; // Altere a cor conforme necessário
+  } else {
+    header.style.backgroundColor = '#6E07F3'; // Cor padrão quando o usuário rolar para o topo
+  }
+});

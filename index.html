@@ -9,16 +9,32 @@
 </head>
 
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#carrer">Hard skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <h1>Desenvolvedor Frontend</h1>
+    <h1 id="home">Desenvolvedor Frontend</h1>
     <p>Eu projeto e codigo coisas lindamente simples, e eu amo o que faço.</p>
     <img id="avatar" src="assets/imagens/meuAvatar.png">
     <img id="device" src="assets/imagens/hero-devices.svg">
     <div id="about">
+      <h2>SOBRE MIM</h2>
       <p>Olá, eu sou Thayna. É um prazer conhecê-lo. Desde que comecei minha jornada como entusiasta de programação, há
         um ano, tenho me dedicado ao estudo de desenvolvimento web. Atualmente, estou no segundo ano do ensino médio e
         estou focada em buscar um estágio nesta área para aprimorar minhas habilidades. Estou animada, naturalmente
         curiosa e sempre buscando melhorar minhas habilidades técnicas.</p>
+      <a id="curriculo" href="assets/Curriculo_-_Thayna.pdf" download="curriculo-Thayna.pdf">
+        <p>Baixar CV</p>
+        <img src="assets/imagens/direct-download.png" alt="download">
+      </a>
       <img src="assets/imagens/icone-prog.png">
       <div id="carrer">
         <p>
@@ -44,19 +60,46 @@
         </div>
 
         <div id="carrossel-container"">
-          <img onclick="avancarScroll('left')" class=" carrossel-seta" src="assets/imagens/seta-esquerda.png">
+          <img onclick=" avancarScroll('left')" class=" carrossel-seta" src="assets/imagens/seta-esquerda.png">
           <div class="carrossel">
           </div>
 
           <img onclick="avancarScroll('right')" class="carrossel-seta" src="assets/imagens/seta-direita.png">
 
+        </div>
+
+      </div>
+
+      <div id="contato">
+        <div id="contato-title">
+          <img src="assets/imagens/icone-prog.png">
+          <h2>CONTATO</h2>
+        </div>
+        <div id="icons">
+          <div>
+
+            <a href="https://api.whatsapp.com/send?phone=27998794142" target="_blank">
+              <img src="assets/imagens/whatsapp.png" alt="icon-whatsapp">
+              <span>(27)998794142</span>
+            </a>
+
+            <a href="mailto:thaynaalvesgoes@gmail.com">
+              <img src="assets/imagens/gmail.png" alt="icon-gmail">
+              <span>thaynaalvesgoes@gmail.com</span>
+            </a>
+
+            <a href="https://github.com/THAYNAALVES10" target="_blank">
+              <img src="assets/imagens/github.png" alt="icon-github">
+              <span>@thaynaalves10</span>
+            </a>
+          </div>
 
         </div>
 
-
-
       </div>
     </div>
+
+
   </main>
 
   <script src="assets/script.js""></script>
