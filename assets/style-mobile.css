@@ -1,17 +1,38 @@
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-  header{
-    font-size: 1.7rem;
+  header {
+    font-size: 1.3rem;
     height: 6%;
   }
 
-  header>nav{
+  header>nav {
     display: flex;
     width: 95%;
     justify-content: center;
   }
 
-  main{
-    justify-content: ;
+main{
+  margin-top: 10rem;
+  margin-left: 10rem;
+}
+
+  #device{
+    width: 40rem;
+  }
+
+  #about{
+    width: 40rem;
+  }
+
+  #carrossel-container{
+    width: 35rem;
+  }
+
+  #icons > div > a {
+    font-size: 1.5rem;
+  }
+
+  #icons > div {
+    margin-right: 6rem;
   }
 }
