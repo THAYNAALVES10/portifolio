@@ -11,28 +11,28 @@
     justify-content: center;
   }
 
-main{
-  margin-top: 10rem;
-  margin-left: 10rem;
-}
+  main {
+    margin-top: 10rem;
+    margin-left: 10rem;
+  }
 
-  #device{
+  #device {
     width: 40rem;
   }
 
-  #about{
+  #about {
     width: 40rem;
   }
 
-  #carrossel-container{
+  #carrossel-container {
     width: 35rem;
   }
 
-  #icons > div > a {
+  #icons>div>a {
     font-size: 1.5rem;
   }
 
-  #icons > div {
+  #icons>div {
     margin-right: 6rem;
   }
 }

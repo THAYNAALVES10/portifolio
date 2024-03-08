@@ -1,4 +1,4 @@
-const carrosselProjetos = (caminho, titulo, link) => {
+const carrosselProjetos = (caminho, titulo, link, width) => {
   const carrossel = document.querySelector('.carrossel');
   const newDiv = document.createElement('div');
   newDiv.classList.add('carrossel-item')
@@ -38,7 +38,14 @@ const projetosList = [
     titulo: 'Noticias',
     caminho: 'assets/imagens/Noticias.png',
     link: 'https://www.figma.com/file/Ic2MsQ5nU0MPsc9xmWhngr/Untitled?type=design&mode=design&t=raHvp9ZqWROdv35k-0'
-  }
+  },
+
+  {
+    titulo: 'Mário javascript',
+    caminho: 'assets/imagens/mario.png',
+    link: 'https://thaynaalves10.github.io/game-mario/',
+    width: 50
+  },
 ]
 
 const avancarScroll = (direcao) => {
